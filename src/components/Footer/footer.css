@@ -1,0 +1,30 @@
+.footer__ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer__ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+.second__ul {
+    display: flex;
+    flex-direction: column;
+
+}
+.second__ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+}
+.second__ul li:not(:last-of-type) {
+    margin-top: 15px
+}

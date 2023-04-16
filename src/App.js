@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Main from "./components/Main/Main";
 
 function App() {
+    const  listHeader = ['Home', 'Courses', 'Mentor', 'Community']
+    const  listFooter = ['123 Market St.', '(434) 546-4356', 'contact@edumena.org']
+    const  listFooterTwo = ['Facebook','Twitter','Linkedin','Instagram']
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: "flex", flexDirection : "column" }}>
+        <Header
+        list={listHeader}
+        />
+        <Main/>
+        <Footer
+            listTwo={listFooter}
+            list={listFooterTwo}
+        />
     </div>
   );
 }

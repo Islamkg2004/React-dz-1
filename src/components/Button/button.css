@@ -1,0 +1,14 @@
+.button {
+    width: 189px;
+    height: 54px;
+    background: #F31D1D;
+    border-radius: 15px;
+}
+a {
+    width: 117px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
